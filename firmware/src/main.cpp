@@ -5,9 +5,9 @@
 #include <WebServer.h>
 #include <String.h>
 
-const char* ssid = "DESKTOP-130LIKG 6706";
-const char* password = "Alpha221";
-const char* apiKey = "77066cf5b474b1599b226bc154913a36";
+const char* ssid = "***********";
+const char* password = "***********";
+const char* apiKey = "********************************";
 WebServer monserver(80);
 void accueil();
 void meteo();
