@@ -66,7 +66,7 @@ void draw() {
   textSize(60);
   text(humidite + " %", 575, 310);
   
-  // === FOOTER ===
+  // === Infos sup ===
   fill(255, 255, 255, 150);
   textSize(14);
   textAlign(LEFT);
@@ -82,7 +82,7 @@ void serialEvent(Serial monPort) {
   if (data != null) {
     data = trim(data);
     
-    // Ignore les lignes sans virgule (messages debug ESP32)
+    // Ignore les lignes sans virgule
     if (data.contains(",")) {
       String[] valeurs = split(data, ',');
       
